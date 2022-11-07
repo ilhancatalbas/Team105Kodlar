@@ -23,6 +23,9 @@ public class EChild extends DParent {                  // extends yazip parentim
 
         // bende yoksa babamda vardir ornegi
 
+        //
+
+
 
     }
 }
