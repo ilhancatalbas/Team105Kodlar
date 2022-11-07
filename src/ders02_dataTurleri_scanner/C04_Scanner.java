@@ -24,3 +24,5 @@ public class C04_Scanner {
 
     }
 }
+
+// ctrl+sft+o ile otomatik yukariya    import java.util.Scanner;    olusturabiliriz

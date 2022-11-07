@@ -9,7 +9,8 @@ public class C03_ArrayElementleriArtirma {
         // Soru1- Verilen bir int array'in tum elemanlarini 2 arttirip bize donduren bir method olusturun.
         //        eski array'i yeni haliyle kaydedin
 
-        int [] arr= {2, 4, 6, 8};
+        int[] arr = {2,4,6,8};
+
 
         for (int i = 0; i < arr.length; i++) {
 

@@ -3,18 +3,36 @@ package ders18_arrays;
 public class C00_Aciklama {
 }
 
-//bugune kadar kullandigimiz data turlerine sadece 1 variable'a atayabiliyordu
+/* NOTLAR:      ( bazi notlar asagidaki aciklamayla ayni )
+
+-- bugune kadar kullandigimiz data turlerine sadece 1 variable'a atayabiliyordu
+
+-- neden fazla variable diye dusundugumuzde, marketlerden ornek verelim. bir market bir urun satmaz. Birden fazla urunu olur
+--  biden fazla eleman barindirdigi icin bize kolaylik sagliyor.
+
+-- Stringde oldugu gibi array'dede indexler var ve bu index'lerde 0'dan baslar
+
+-- array String'de olabilir, integer da olabilir vb.
+
+--  array'in uzunlugu sabittir degistirelemez. ( katakulli yapilabilir :) )
+
+-- int [] arr = {1, 3, 8, 23, 99}  bu array'in uzunlugu 5 ,  elementleride [1, 3, 8, 23, 99] dur.   sonradan bu elementlri degistirebiliriz. mesela 8'i silip 7 yapabiliriz
+
+-- int[]arr= new int[5];          bu arrayin elementleri olmadigi icin java bunlara default deger atar [0,0,0,0,0]
+
+ */
 
 /*
+_________Array__________
 
 Array (dizi)'ler java'da ayni data turunden birden fazla eleman barindirabilen objelerdir
 
-1-)  bir Arrat olusturulurken 2 seye dikkat edilmeli
+1-)  bir Array olusturulurken 2 seye dikkat edilmeli
      A- icine koyulacak elementlerin data turu
      B- icine kac tane  element koyulacagi (length)
                                                     ornek: int[] arr = new int [5];
 
-bir array'in icinde farkli data turlerinden element olamaz
+NOT: bir array'in icinde farkli data turlerinden element olamaz
 
 Array'ler primitive data turundeki datalarin degerlerini,
 non-primitive data turundeki datalarin ise referanslarini barindirirlar.
@@ -37,7 +55,7 @@ A ve B'de deklare ettik ama deger atamadik, java referansi olusturur ama length 
         int[]arr= {1, 3, 8, 23, 99}
         sout(arr.length);    // 5
 
-   NOT: Array'deki length bir method degii uzunlugu tutan bir variable'dir
+   NOT: Array'deki length bir method degiL uzunlugu tutan bir variable'dir
         Dolayisiyla yaninda () yoktur
 
    NOT: Array'dede length vardir. stringdeki length bir method (yaninda ()parantez vardi) iken array daki length bir bilgidir

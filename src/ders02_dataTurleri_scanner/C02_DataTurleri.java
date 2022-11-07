@@ -7,12 +7,12 @@ public class C02_DataTurleri {
         char c1 = 's';
         char c2 = '*';
 
-       //  char c3 = "g";
+       // char c3 = "g";
        // cift tirnak " "  icinde yazilirsa metin icerik olarak kabul eder dolayisiyla char olamaz
 
 
         // char c4 = 'gb';
-        //  char birden fazla karakter barindiramaz
+        // char birden fazla karakter barindiramaz
 
 
 
