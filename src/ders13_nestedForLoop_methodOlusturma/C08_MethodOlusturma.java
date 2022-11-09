@@ -16,9 +16,9 @@ public class C08_MethodOlusturma {
     }
 
 
-    public static void isteToplaYazdir(){            //public le basladik. static: main method'dan kullanabilmek icin. bana birsey dondurmeyecek sadece yazdiracagi icin void dedik
-
-        // kullanicidan nasil sayi aliriz scanner la
+    public static void isteToplaYazdir(){            // public le basladik. static: main method'dan kullanabilmek icin. bana birsey dondurmeyecek sadece yazdiracagi icin void dedik
+                                                     // sayiyi kullanicidan alacagimiz icin parametre olusturmamiza gerek yok. main'den sadece calistiracagiz
+                                                     // kullanicidan nasil sayi aliriz?  scanner aliriz
 
         Scanner scan = new Scanner(System.in);
         System.out.println("Lutfen 2 sayi giriniz");

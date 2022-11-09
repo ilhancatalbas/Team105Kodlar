@@ -31,7 +31,7 @@ public class C02_ForLoops {
 
         // kullanicinin verdigi sayinin faktoryelini bulalim
 
-        int sayi = 10;
+        int sayi = 5;
 
         int faktoryel = 1;
 

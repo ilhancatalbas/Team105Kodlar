@@ -82,7 +82,7 @@ A ve B'de deklare ettik ama deger atamadik, java referansi olusturur ama length 
     sout (Arrays.toString(arr));         //    [1, 3, 8, 23, 99]
     sout (arr);                          //    [I@1752f6e2]          referansi verir
 
- Not: ornek: Array'in tum elementlerine ulasmamizi istiyorlarsa for loop kullanacagiz.
+ NOT: ornek: Array'in tum elementlerine ulasmamizi istiyorlarsa for loop kullanacagiz.
              sadece bir elementine ulasmamimizi istiyorlarsa ozaman o elemente ulasip degistirebiliriz
 
 

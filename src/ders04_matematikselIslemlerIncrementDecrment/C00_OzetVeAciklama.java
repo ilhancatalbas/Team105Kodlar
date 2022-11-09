@@ -52,6 +52,9 @@ _________Decrement (Deger Azaltma)___________
  - Cikarma veya bolme yaparak bir variable’in degerini azaltabiliriz. Decrement isleminin kalici olmasi icin 3 farkli sekilde assignment yapilabilir.
 
 
+ Post-Increment’te, increment diger islemden sonrayapilir .
+
+
 
 
 

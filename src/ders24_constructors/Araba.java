@@ -17,7 +17,7 @@ public class Araba {
     }
 
     public Araba(String mrk, String mdl){
-        marka=mrk;                            // artik class icinde atama yapamak istemedimizden dolayi. cons. icinde atama yapmak istiyoruz
+        marka=mrk;                                        // artik class icinde atama yapamak istemedimizden dolayi. cons. icinde atama yapmak istiyoruz
         model=mdl;
 
     }
@@ -25,12 +25,12 @@ public class Araba {
     //constructor'i intelliJ'nin otomatik olusturmasini istiyorsak, ust menuden code, sonra generate sonra constructor'i secebiliriz
 
     public Araba(String marka, String model, int fiyat) {
-        this.marka = marka;                                // buardaki this'ler olmasa java bu scop;dan disari cikamiyor
-        this.model = model;                                // this ile biz java ya bu bizim markamiz modelimiz diyoruz. yukaridakiler yani
+        this.marka = marka;                                // buardaki this'ler olmasa java bu scop'dan disari cikamiyor
+        this.model = model;                                // this ile biz java'ya bu bizim markamiz modelimiz diyoruz. yukaridakiler yani
         this.fiyat = fiyat;
     }
 
-    public Araba(){                      // biz cons olusturdugumuz icin, java default cons. sildigi icin parametresiz bir cons olusturduk
+    public Araba(){                                       // biz cons olusturdugumuz icin, java default cons. sildigi icin parametresiz bir cons olusturduk
 
     }
 

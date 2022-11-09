@@ -30,10 +30,14 @@ public class C06_SwitchCase {
         }else {
             System.out.println("Gecersiz gun numarasi");
         }
-                                                                */
+                                                                */          // switch: anahtar, salter demek. Degistirgec
+                                                                            // switch biseyleri degistirecek ama neye gore. paranteze yazdigimiz degiskene gore.  switch (gunNo){  bu body
+                                                                         // body'nin icinde case'ler olur. onlarida gun
+        //swutch statements'daki default,  else benziyor. bunlar degilse, default olsun gibi
+        // kullanicinin yazdigi deger case deki hangi numaraya denk geliyorsa o calisir.
+        // ama ortada bi numaraya denk gelirse, ondan sonraki butun numaralar calisir, bu olmasin sadece tek bir case calissin istiyorsak, aralra break koyariz
 
-
-        //  asagidaki yukaridaki ornegin Switch le yapi
+        //  asagidaki yukaridaki ornegin Switch ile yapi
 
         switch (gunNo){
             case 1  :
