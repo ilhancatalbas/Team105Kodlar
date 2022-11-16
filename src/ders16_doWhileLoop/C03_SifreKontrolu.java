@@ -27,7 +27,7 @@ public class C03_SifreKontrolu {
         do{
             System.out.println("Lutfen bir sifre giriniz");
             sifre=scan.nextLine();
-            // tum hatalari soylemesini istiyorsak, bagimsiz if cunleleri ve bayrak kullanmaliyiz
+            // tum hatalari soylemesini istiyorsak, bagimsiz if cumleleri ve bayrak kullanmaliyiz
             bayrak=0;
             int sonuc = kucukHarfKontroluYap(sifre);                   //kucukHarfKontroluYap  metodu yok. eger yaklasirsan maouse ile java istiyorsan boyle bir method olusturayim dioyr
             // kucuk harf kontrolu yapan bir method olustururalim

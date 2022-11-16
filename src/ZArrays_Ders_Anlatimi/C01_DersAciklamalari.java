@@ -1,5 +1,6 @@
 package ZArrays_Ders_Anlatimi;
 
+import java.util.Arrays;
 import java.util.Locale;
 
 public class C01_DersAciklamalari {
@@ -28,7 +29,7 @@ public class C01_DersAciklamalari {
 ==>  1-Bir array olusturulurken 2 sey deklare edilmek zorundadir.
                   A-Icine konulacak elementlerin data turu
 
-                  int [] arr = new int [5]                       // data turunun yanina koseli parantez koydugumuzda, java bunun bir array oldugunu anlar. int' oldugunu aNlar
+                  int [] arr = new int [5]                       // data turunun yanina koseli parantez koydugumuzda, java bunun bir array oldugunu anlar. int' oldugunu anlar
 
        NOT: Bir array icinde FARKLI DATA TURUNDEN element olamaz.
        NOT: Array’ler primitive data turundeki datalarin degerlerini, non-primitive data turundeki datalarin ise referanslarini barindirirlar.
@@ -86,7 +87,7 @@ public class C01_DersAciklamalari {
         Array direk yazdirilamaz, direk yazdirmak isterseniz array’i degil referansini yazdirir.
         Array’i yazdirmak icin Arrays class’indan toString( ) method’u kullanilmalidir.
 
-        int [] arr = {1, 3, 8, 23, 99};                System.out.println(arr)           [I@2752f6e2
+        int [] arr = {1, 3, 8, 23, 99};                System.out.println(arr)           [I@2752f6e2            referansi
 
         System.out.println(Arrays.toString(arr));             [1, 3, 8, 23, 99]
 
@@ -94,28 +95,92 @@ public class C01_DersAciklamalari {
         NOT: array'de temel mantigimiz su olacak herzaman; bizden hangi elemente ulasmamiz isteniyora, ona ulasacagiz, onu degistirecegiz.
              Eger array'in tum elementlerine ulasmamiz isteniyorsa, ozaman for loop kullanacagiz.
 
+==>   8-Bir array’in elemanlari nasil siralanir?
+        Array’lerde siralama yapmak icin Arrays class’indan yardim almak gerekir.
+        Arrays.sort( ) method’u array’i Natural Order’a gore siralar.
+        Buyukten kucuge siralamak isterseniz, sort( ) ile siralayip, loop ile tersine cevirmek gerekir.
+
+        int[] arr = {1,3,9,5,4,6};
+        System.out.println(Arrays.toString(arr));                     [1, 3, 9, 5, 4, 6]
+
+        Arrays.sort(arr);
+        System.out.println(Arrays.toString(arr));                     [1, 3, 4, 5, 6, 9]
+
+==>   9-Bir array’de istenen elemanin varligi nasil kontrol edilir?
+        Binary search metodunun dogru sonuc verebilmesi icin
+        oncelikle sort metodu kullanilmalidir
+
+        sort() kullanilmadan binarySearch() ile yapilan aramanin sonucu belli olmaz
+        dogru sonuc da verebilir, yanlis sonuc da verebilir
+
+        Bununla ilgili youtube videosu var. (ahmet hoca tavsiyesi)
+        mantigi su: java aramaya ortadan basliyor. 8 ariyorsan mesala 7 den sonra bakiyor.
+
+
+        Array’lerde istenen bir elemanin varligini kontrol etmek icin binarySearch( ) method’u kullanilir.
+        Ancak, binarySearch( ) kullanmadan once MUTLAKA sort( ) ile siralama yapilmalidir.
+        Arrays.sort( ) kullanilmadan da binarySearch( ) calisir ancak sonuclarinin ne olacagi BILINEMEZ.
+        binarySearch( ) ile array’de olmayan bir eleman aranirsa, olmasi gereken sirayi  –ile VERIR.
+
+        int[] arr = {1,8,3,7,2,5,8,1};
+        System.out.println(Arrays.binarySearch(arr,8));    // 6
+        System.out.println(Arrays.binarySearch(arr,5));    // -2
+        System.out.println(Arrays.binarySearch(arr,1));    // 0
+        System.out.println(Arrays.binarySearch(arr,9));    // -10
+
+==>   10-Iki array’in esitligi nasil kontrol edilir?
+         Arrays.equals(arr1,arr2);
+         herbir index icin elemanlari kontrol eder, tum index’lerdeki degerler karsilikli esit ise true, farklilik varsa false döner.
+
+==>   11-Bir String’i array’e cevirmek
+         str.split( StringAyirac); bir String’i istedigimiz parcalara ayirarak bir array’e cevirir.
+         bu aslinda bir string metotudur.
+         javaya nasil bolecegimizi soyluyoruz. virgulden bol, bolsuktan bol, a harfine gore bol, vb gibi
+         hiclikten bolrsek tum karakterleri elde ederiz.
+
+         String str = "java gercekten cok cok guzel";
+         kac tane e harfi vardir?
+         String[] eArrayi= str.split("e");
+         System.out.println(Arrays.toString(eArrayi));
+         System.out.println(eArrayi.length);
+
+==>    ONEMLI NOT : Varolan bir array’e yeni deger atanabilir mi ?
+                    Varolan bir array’e elementleri yazarak yeni deger atamasi yapamayiz
+                    Ancak new keyword ile yeni bir deger atayabiliriz. Bu varolan array’in uzunlugunu degistirmek degil,
+                    yepyeni bir array olusturmak oldugundan Java CTE vermez.
+                    (yani; var olan arabamizi suv'a cevirmeyiz ama onu verir yerine yenisini alabiliriz)
+
+                    NOT:varolan bir array in uzunlugu degistirilemez  AMA  varolan bir array'e yeni bir array degeri atayabiliriz
+
+                        1- var olan bir array'i yeni deger olarak atayabiliriz
+
+                    String[] arr1={"Ali", "Veli"};                    // burada array'e yeni bir deger atamadik. varolan arry'i degistirdik.
+                    String[] arr2={"A","B","C"};                      // toyota ornegi: eski arabasini aldik, ona yeni bir araba verdik. yine o adamain arabasi ama artik farkli araba
+                    arr1=arr2;
+                    System.out.println(Arrays.toString(arr1));        // [A, B, C]
+
+                        2- istedigimiz uzunlukta yeni bos bir array degeri atayabiliriz
+
+                     arr1=new String[6];                                // uzunlugu 6 olan bos bir array atadik. 6 tane nul gorucez
+                     System.out.println(Arrays.toString(arr1));         // [null, null, null, null, null, null]
+
+                        3- Yeni olusturulan bir array'e {} icinde deger yazarak atama yapabiliriz
+                           ancak var olan bir array'e yeni deger atamasi icin {} KULLANILAMAZ
+
+                     arr1={"g","h"};       // olmaz                     // varolan bir array sanki ilk defa deger atiyormusuz gibi deger atayamayiz
+
+
+                     int arr[]={3,4,5};                                    ilk defa olusturdugumuz array. java kabul eder. var olan array'e ust satirdaki gibi yeni bir array atanamaz
+
+
+
+
+
 
 
 
 
       */
-
-
-
-        
-
-
-
-
-
-
-
-
-
-
-        String bharf = "farkli data turunden";
-
-        System.out.println(bharf.toUpperCase(Locale.ROOT));
 
     }
 

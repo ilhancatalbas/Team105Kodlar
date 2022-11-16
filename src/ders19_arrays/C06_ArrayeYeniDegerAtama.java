@@ -6,8 +6,8 @@ public class C06_ArrayeYeniDegerAtama {
 
     public static void main(String[] args) {
 
-        String str="java";       // stringe yeni bir deger atabiliriz
-        str="hava";              // bu sadece atayabilecigimizin ornegi
+        String str="java";                                // stringe yeni bir deger atayabiliriz
+        str="hava";                                       // bu sadece atayabilecigimizin ornegi
 
 
         /*

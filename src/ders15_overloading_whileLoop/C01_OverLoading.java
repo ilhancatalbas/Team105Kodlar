@@ -12,6 +12,10 @@ public class C01_OverLoading {
         bir class'da ayni isimde ama farkli signature'a sahip method'lar olusturulmasina
         Method Overloading denir
          */
+        /*
+        biz kafamiza gore parametre yazamayiz. signature uygun yazilmalidir
+
+         */
 
 
     }

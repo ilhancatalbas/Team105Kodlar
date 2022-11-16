@@ -4,7 +4,7 @@ public class C00_aciklama {
 }
 /*
 
-    NOT: instanve varibale; yani objeye bagli variable
+    NOT: instance varibale; yani objeye bagli variable
 
     NOT: class lari bir logo kalibi gibi dusunebiliriz. class lardan lego kaliplarindan lego yapacagiz. legolardanda oyuncaklar yapacagiz
          Dolayisiyla class'lardan objeler olusturup kullanmak icin yapariz

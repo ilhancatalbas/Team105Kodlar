@@ -1,5 +1,7 @@
 package ZArrays_Ders_Anlatimi;
 
+import java.util.Arrays;
+
 public class C11_NotlardakiSorular_ElemanlariSagaKaydirma {
 
     public static void main(String[] args) {
@@ -12,7 +14,11 @@ public class C11_NotlardakiSorular_ElemanlariSagaKaydirma {
         // Hatirlatma; kum dolu kova, su dolu kova mantigini hatirla.
 
 
-        int[] arr = {4, 5, 6, 7};
+        int[] arr = {4, 5, 6, 8, 9};
+
+        arr=sagaKaydir(arr);                                          // array'i yeni haliyle kaydetmek icin bunu yazdik
+
+        System.out.println(Arrays.toString(arr));
 
     }
 
@@ -20,14 +26,18 @@ public class C11_NotlardakiSorular_ElemanlariSagaKaydirma {
 
         int bosKova = arr[arr.length-1];                              // array'in son elementini bos kovaya koyduk
 
-        for (int i = arr.length-2; i >0 ; i++) {                      // array'in sondan 2. elementini son elemente atayacagiz. sondan basa geldigi icin i-- olacak
+        for (int i = arr.length-2; i >=0 ; i--) {                      // array'in sondan 2. elementini son elemente atayacagiz. sondan basa geldigi icin i-- olacak
 
-            arr[i+1]=arr[i];                                          // saga kaydirdigimiz icin i+1 olani i ye atamadik
+            arr[i+1]=arr[i];                                          // saga kaydirdigimiz icin i+1 olani i ye atadik
 
         }
 
         arr[0]=bosKova;
 
+        return arr;
+
+
+        // once arrayin son index'indeki son elementini bos kovaya atadik. (kaybetmemek icin)
 
     }
 }

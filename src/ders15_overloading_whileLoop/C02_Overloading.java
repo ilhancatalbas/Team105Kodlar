@@ -10,6 +10,8 @@ public class C02_Overloading {
 
     }
 
+    //   Argument: methol call sirasinda method parantezine yazilanlara argument denir
+
     //   Bir class da ayni isim ve ayni signature'a sahip iki metod olmaz
 
     //   Method overloading olan class'larda java hangi method'un calisacagina su sekilde bakar
