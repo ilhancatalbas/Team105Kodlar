@@ -21,6 +21,8 @@ public class C02_variables {
 
         System.out.println(not);
 
+        System.out.println();
+
 
 
 

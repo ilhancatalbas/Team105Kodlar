@@ -5,6 +5,8 @@ public class C01_GenelNotlar {
 /*
     Argument: methol call sirasinda method parantezine yazilanlara argument denir
 
+    instance variable: objeye bagli variable
+
     static Scanner scan = new Scanner(System.in);  basina static yazinca biz onu artik tum static methodlarda gorebiliriz. Atm projesi
     static String sifre = "12345";   ayni sekilde variable'da static yaptikki classin icinde olan variable methodun icindede gorelim.
 

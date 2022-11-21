@@ -31,7 +31,7 @@ public class HAraba {
 
     public HAraba(){                                                 // bu bir parametresiz constructor.
         // gorunur durumdaki parametresiz construcor
-        //default constructor DEGILDIR.
+        // default constructor DEGILDIR.
         // Default constructor'in body'si de bos olur
         // ancak parametresiz constructor'da body'e kod yazilabilir
 

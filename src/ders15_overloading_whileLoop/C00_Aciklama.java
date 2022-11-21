@@ -6,7 +6,8 @@ public class C00_Aciklama {
 
     // GENEL BIR NOT:
     // Biz nokta yapip metod cagirdigimizda metodun yaninda yazilar cikiyor.
-    // Method isminin hemen sagind anki yazi (signature) bize o method'da hangi data turunu kullanabilecegimiz gosteriyor.
+    // Method isminin hemen sagind anki yazi (signature) bize o method'da
+    // hangi data turunu kullanabilecegimiz gosteriyor.
     // ismin en sagindaki yazi ise bize hangi turde sonuc verecegini gosteriyor
     // mesela;   .substring(int beginIndex, int endIndex)         String
     // diyorki . substring icin integer data gir ben sana String sonuc vericem.
